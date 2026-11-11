@@ -1,0 +1,12 @@
+window.PORTFOLIO_DATA = {
+  projects: [
+    {id:1,category:"frontend",title:{fa:"TaskFlow | مدیریت کارها",en:"TaskFlow | Task manager"},desc:{fa:"داشبوردی سبک برای برنامه‌ریزی و پیگیری کارهای روزانه.",en:"A lightweight dashboard for planning and tracking daily work."},tags:["HTML","CSS","JavaScript"],visual:"tasks"},
+    {id:2,category:"frontend",title:{fa:"Weatherly | وضعیت آب‌وهوا",en:"Weatherly | Weather app"},desc:{fa:"رابطی ساده برای نمایش وضعیت فعلی و پیش‌بینی هوا.",en:"A clear interface for current weather and forecast information."},tags:["JavaScript","API","CSS"],visual:"weather"},
+    {id:3,category:"ui",title:{fa:"Folio Kit | کیت رابط کاربری",en:"Folio Kit | UI kit"},desc:{fa:"مجموعه‌ای از اجزای رابط برای صفحات شخصی و حرفه‌ای.",en:"A reusable component set for personal and professional websites."},tags:["UI Design","CSS","Responsive"],visual:"folio"},
+    {id:4,category:"frontend",title:{fa:"ShopLite | فروشگاه آنلاین",en:"ShopLite | Online store"},desc:{fa:"نمونه رابط فروشگاه با کارت محصول و سبد خرید نمایشی.",en:"A storefront concept with product cards and a demo cart."},tags:["HTML","CSS","JavaScript"],visual:"shop"}
+  ],
+  posts: [
+    {id:1,date:"2026-10-12",title:{fa:"چرا HTML معنایی مهم است؟",en:"Why semantic HTML matters"},desc:{fa:"چطور تگ‌های درست، دسترسی‌پذیری و ساختار صفحه را بهتر می‌کنند.",en:"How the right elements improve accessibility and page structure."},body:{fa:"HTML معنایی یعنی انتخاب تگ بر اساس معنی محتوا، نه فقط ظاهر آن. از header، nav، main، article و footer استفاده کنید. این کار فهم ساختار را برای مرورگر، موتور جست‌وجو و فناوری‌های کمکی بهتر می‌کند.",en:"Semantic HTML means choosing elements for the meaning of content, not just its appearance. Use header, nav, main, article and footer. This makes structure clearer to browsers, search engines and assistive technologies."}},
+    {id:2,date:"2026-10-20",title:{fa:"Flexbox یا Grid؟",en:"Flexbox or Grid?"},desc:{fa:"یک راهنمای کوتاه برای انتخاب ابزار مناسب چیدمان در CSS.",en:"A short guide to choosing the right CSS layout tool."},body:{fa:"Flexbox برای چیدمان یک‌بعدی و توزیع آیتم‌ها در یک ردیف یا ستون عالی است. Grid زمانی مناسب است که به کنترل هم‌زمان ردیف‌ها و ستون‌ها نیاز دارید. در پروژه واقعی می‌توانید این دو را ترکیب کنید.",en:"Flexbox is excellent for one-dimensional layouts. Grid is ideal when you need control over rows and columns together. In real projects, you can combine both."}}
+  ]
+};

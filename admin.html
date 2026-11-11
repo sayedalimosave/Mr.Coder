@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>MR.CODER | Admin</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/admin.css"></head>
+<body>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><span class="brand-mark">M.</span>MR.CODER ADMIN</a><a href="index.html" class="text-link">مشاهده سایت ↗</a></div></header>
+<main class="container admin-main">
+  <section class="admin-login" id="loginPanel"><span class="eyebrow">LOCAL ADMIN DEMO</span><h1>ورود به پنل مدیریت</h1><p class="muted">این نسخه بدون سرور است. رمز آزمایشی را وارد کنید.</p><form id="loginForm" class="contact-form"><label>رمز عبور<input id="adminPassword" type="password" required autocomplete="current-password"></label><button class="btn btn-primary">ورود</button><p id="loginError" class="form-feedback"></p></form><small class="muted">رمز پیش‌فرض: <code>mrcoder-demo</code> — حتماً آن را تغییر دهید.</small></section>
+  <section id="dashboard" hidden>
+    <div class="admin-heading"><div><span class="eyebrow">CONTROL CENTER</span><h1>داشبورد مدیریت</h1><p class="muted">اطلاعات این نسخه در همین مرورگر ذخیره می‌شود.</p></div><button id="logoutBtn" class="btn btn-ghost">خروج</button></div>
+    <div class="admin-stats"><article><span>بازدیدهای ثبت‌شده</span><strong id="viewsCount">0</strong></article><article><span>پروژه‌ها</span><strong id="projectCount">0</strong></article><article><span>پیام‌های ثبت‌شده</span><strong id="messageCount">0</strong></article></div>
+    <div class="admin-columns">
+      <section class="admin-box"><h2>افزودن پروژه</h2><form id="projectForm" class="contact-form"><label>عنوان فارسی<input name="fa" required></label><label>عنوان انگلیسی<input name="en" required></label><label>توضیح فارسی<textarea name="descFa" rows="2" required></textarea></label><label>توضیح انگلیسی<textarea name="descEn" rows="2" required></textarea></label><label>دسته‌بندی<select name="category"><option value="frontend">Frontend</option><option value="ui">UI Design</option></select></label><button class="btn btn-primary">ذخیره پروژه</button></form><div id="adminProjects" class="admin-list"></div></section>
+      <section class="admin-box"><h2>بازدیدهای اخیر</h2><div id="recentViews" class="admin-list"></div><h2 class="space-top">پیام‌های تماس</h2><div id="adminMessages" class="admin-list"></div><button id="clearData" class="btn btn-danger">پاک کردن آمار و پیام‌ها</button></section>
+    </div>
+    <p class="admin-warning">هشدار امنیتی: این پنل صرفاً دمو و مبتنی بر localStorage است؛ رمز آن امنیت واقعی ندارد، اطلاعات بین دستگاه‌ها همگام نمی‌شود و برای انتشار عمومی مناسب نیست. برای نسخه واقعی از احراز هویت سروری و دیتابیس مانند Supabase استفاده کنید.</p>
+  </section>
+</main>
+<script src="js/data.js"></script><script src="js/admin.js"></script>
+</body></html>
